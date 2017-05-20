@@ -5,10 +5,12 @@ import cards.*;
   public class CardTest {
 
   Card card;
+  DeckCreator deckCreator;
 
   @Before
   public void before() {
     card = new Card(CardSuit.DIAMONDS, CardValue.FIVE);
+    deckCreator = new DeckCreator();
   }
 
   @Test
@@ -20,6 +22,11 @@ import cards.*;
   public void canGetCardValue() {
     assertEquals(CardValue.FIVE, card.getValue());
   }
+
+  @Test
+    public void deckStartsEmpty(){
+      assertEquals(0, deckCreator.cardCount());
+    }
 
 
 }
