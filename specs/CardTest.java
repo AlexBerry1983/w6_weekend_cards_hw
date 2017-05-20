@@ -24,9 +24,8 @@ import cards.*;
   }
 
   @Test
-    public void deckStartsEmpty(){
-      assertEquals(0, deckCreator.cardCount());
-    }
-
+  public void deckStartsFull() {
+    assertEquals(52, deckCreator.cardCount());
+  }
 
 }
