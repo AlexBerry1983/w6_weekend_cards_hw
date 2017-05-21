@@ -1,17 +1,26 @@
-// package cards;
-// import java.util.*;
-// public class Hand {
+package hands;
+import java.util.*;
+import cards.*;
+import players.*;
 
-//   Deck deck;
-//   ArrayList<Card> myHand = new ArrayList<Card>(); 
+public class Hand {
 
-  // public void addCardToHand(Deck deck) {
-  //   for (int i = 0; i <= 0; i ++) {
-  //     myHand.add(deck.removeCard());
-  //   }
-  // }
+  Deck deck;
+  ArrayList<Card> myHand = new ArrayList<Card>(); 
 
+  public Hand() {
+    this.myHand = new ArrayList<Card>();
+  }
   
+  public void addCardToHand(Deck deck) {
+    for (int i = 0; i <= 0; i ++) {
+      myHand.add(deck.removeCard());
+    }
+  }
+
+  public int countCardsInHand() {
+    return myHand.size();
+  }
 
  
-// }
+}
