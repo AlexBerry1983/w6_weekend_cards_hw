@@ -1,11 +1,11 @@
 package cards;
 import java.util.*;
 
-  public class DeckCreator {
+  public class Deck {
 
     public ArrayList<Card> deck;
 
-    public DeckCreator() {
+    public Deck() {
       this.deck = new ArrayList<Card>();
       
       CardValue[] allTheValues = CardValue.values();
@@ -24,5 +24,10 @@ import java.util.*;
       return deck.size();
     }
 
-    
+    public Card removeCard(){
+        if(cardCount() > 0) {
+          return deck.remove(0);
+        }
+        return null;
+      }
   }
