@@ -13,9 +13,7 @@ public class Hand {
   }
   
   public void addCardToHand(Deck deck) {
-    for (int i = 0; i <= 0; i ++) {
-      myHand.add(deck.removeCard());
-    }
+      myHand.add(deck.removeCard());     
   }
 
   public int countCardsInHand() {

@@ -23,9 +23,9 @@ public class HandTest {
     assertEquals(0, hand.countCardsInHand());
   }
   
-  // @Test
-  // public void canAddCardToHand(Deck card) {
-  //   hand.addCardToHand(card);
-  //   assertEquals(1, hand.countCardsInHand());
-  // }
+  @Test
+  public void canAddCardToHand(Deck deck) {
+    hand.addCardToHand(deck);
+    assertEquals(1, hand.countCardsInHand());
+  }
 }
